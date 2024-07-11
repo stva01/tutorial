@@ -1,5 +1,10 @@
 
-setInterval(() => {
-    console.log('hi my name is satva')
-    
-}, 1000);
+const names=require('./names');
+const sayHi=require('./utils');
+
+console.log(names)
+
+ sayHi(names.age)
+ sayHi('satva01')
+
+

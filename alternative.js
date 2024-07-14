@@ -4,4 +4,4 @@ const person={
     age:20
 }
 
-module.exports.person
+module.exports.person   

@@ -1,11 +1,21 @@
+const {readFileSync,writeFileSync}=require('fs')
 
-const names=require('./names');
-const sayHi=require('./utils');
-const data=require('./alternative')
-require('./mindgrenade')
-// console.log(names)
+const first = readFileSync('./content/first.txt','utf8')
+const second = readFileSync('./content/second.txt','utf8')
 
-//  sayHi(names.age)
-//  sayHi('satva01')
-// console.log(data)
+//console.log(first,second)
+writeFileSync('./content/result-sync.txt',`here is the result: ${first},and this is the scond : ${second}`,{flag:'a'})
 
+
+
+
+
+
+
+
+
+
+// const names=require('./names');
+// const sayHi=require('./utils');
+// const data=require('./alternative')
+// require('./mindgrenade')

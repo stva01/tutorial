@@ -4,12 +4,8 @@ const customEventEmitter = new EventEmiitter()
 // two most important methods are on and emit 
 // on listens for an event 
 // emits that event 
-customEventEmitter.on('response',(name,id)=>{
-    console.log(`data received from server : ${name} and ${id}`)
-})
-
 customEventEmitter.on('response',()=>{
-    console.log('some other data received')
+    console.log('data received from server')
 })
 
-customEventEmitter.emit('response','satva',34)  
+customEventEmitter.emit('response')
